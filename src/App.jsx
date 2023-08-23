@@ -1,11 +1,14 @@
-import './App.css'
+
+import { ItemListContainer } from "./components/ItemListContainer"
+import { NavBar } from "./components/NavBar"
 
 function App() {
+  const greeting = "Lista de Produtos";
+
   return (
     <>
-      <div className="nomeDaLoja" >
-      UrbanWardrobe
-      </div>
+      <NavBar />    
+      <ItemListContainer greeting={greeting}/>
     </>
   )
 }

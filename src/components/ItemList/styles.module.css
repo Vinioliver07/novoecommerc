@@ -1,0 +1,13 @@
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0371e;
+}
+h1 {
+    display:flex;
+    background-color: #f04646;
+    color:#fff;
+    justify-content: center;
+    
+}
