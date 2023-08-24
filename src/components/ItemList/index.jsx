@@ -18,24 +18,24 @@ export function ItemList() {
     const items = [
         {
             id: 1,
-            title1: 'Camisa Mc Nova Paraty',
-            price: "R$299,99",
-            image_url: 'https://lojausereserva.vtexassets.com/arquivos/ids/7626474-600-auto?v=638182324950470000&width=600&height=auto&aspect=true'
+            titulo: 'Camisa Mc Nova Paraty',
+            preco: "R$299,99",
+            img: 'https://lojausereserva.vtexassets.com/arquivos/ids/7626474-600-auto?v=638182324950470000&width=600&height=auto&aspect=true'
         }, {
             id: 2,
-            title2: 'Camisa Mc Tricot Rede',
-            price: "R$ 285,99",
-            image_url: 'https://lojausereserva.vtexassets.com/arquivos/ids/7220575-600-auto?v=638044032712900000&width=600&height=auto&aspect=true'
+            titulo: 'Camisa Mc Tricot Rede',
+            preco: "R$ 285,99",
+            img: 'https://lojausereserva.vtexassets.com/arquivos/ids/7220575-600-auto?v=638044032712900000&width=600&height=auto&aspect=true'
         }, {
             id: 3,
-            title3: 'Camisa Mc Estampada',
-            price: "R$ 299,99",
-            image_url: 'https://lojausereserva.vtexassets.com/arquivos/ids/7855116-600-auto?v=638228063419670000&width=600&height=auto&aspect=true'
+            titulo:: 'Camisa Mc Estampada',
+            preco: "R$ 299,99",
+            img: 'https://lojausereserva.vtexassets.com/arquivos/ids/7855116-600-auto?v=638228063419670000&width=600&height=auto&aspect=true'
         }, {
             id: 4,
-            title4: 'Camisa Mc Estampada',
-            price: "R$ 139,99",
-            image_url: 'https://lojausereserva.vtexassets.com/arquivos/ids/7077748-1200-auto?v=637941229534030000&width=1200&height=auto&aspect=true'
+            titulo: 'Camisa Mc Estampada',
+            preco: "R$ 139,99",
+            img: 'https://lojausereserva.vtexassets.com/arquivos/ids/7077748-1200-auto?v=637941229534030000&width=1200&height=auto&aspect=true'
         },
     ]
 
