@@ -8,7 +8,7 @@ export function ItemListContainer({greeting}) {
             <div className={style.container}>{greeting}</div>
             <div><ItemCount /></div>
             <br/>
-            <ItemList />
+           <div className={style.ItemsList}><ItemList /></div> 
         </>
     );
 }

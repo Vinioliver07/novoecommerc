@@ -8,7 +8,7 @@ export function ItemCount() {
 
   function addItem() {
     if(itemCount >= estoqueTotal) {
-      alert('Sem mais itens em estoque!');
+      alert('Esgotado!');
     } else {
       setItemCount(itemCount+1);
     }

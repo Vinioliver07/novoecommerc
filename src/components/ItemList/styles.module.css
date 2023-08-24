@@ -1,13 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 p {
-    display: flex;
+    display: flex ;
     align-items: center;
     justify-content: center;
     color: #f0371e;
+    
 }
 h1 {
     display:flex;
     background-color: #f04646;
+    align-items: center;
     color:#fff;
     justify-content: center;
-    
 }
+

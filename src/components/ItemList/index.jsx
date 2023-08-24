@@ -1,71 +1,65 @@
-import { useEffect, useState } from "react";
-import { Item } from "../Item";
+import {useEffect, useState} from "react";
+import {Item} from "../Item";
 import style from "./styles.module.css";
 
 export function ItemList() {
 
-  const [produtos, setProdutos] = useState();
-  const [loading, setLoading] = useState(true);
+    const [produtos, setProdutos] = useState();
+    const [loading, setLoading] = useState(true);
 
-  const fetchProdutos = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(items);
-      },2000)
-    })
-  }
-
-  const items = [
-    {
-      id: 1,
-      title: 'Produto 1',
-      price: "R$",
-      image_url:''
-    },
-    {
-      id: 2,
-      title: 'Produto 2',
-      price:"R$" ,
-      image_url : ''
-    },
-    {
-      id: 3,
-      title: 'Produto 3',
-      price :"R$ ",
-      image_url : ''
-    },
-    {
-      id: 4,
-      title: "Produto 4",
-      price: "R$",
-      image_url: ''
+    const fetchProdutos = () => {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(items);
+            }, 2000)
+        })
     }
 
-  ]
-
-  useEffect(() => {
-    fetchProdutos()
-    .then(produtos => {
-      setProdutos(produtos);
-      setLoading(false);
-    })
-  }, [] );
-  
-
-
-  return (
-    <>
-        <div>
-            <h1 className="title">Lista de Produtos</h1><br/>
-        </div>
+    const items = [
         {
-          loading ? (<p className={style.loading}>Carregando Produtos...</p>) : (
-            <Item items={produtos}/>
-          )
-        }
-        
+            id: 1,
+            title1: 'Camisa Mc Nova Paraty',
+            price: "R$299,99",
+            image_url: 'https://lojausereserva.vtexassets.com/arquivos/ids/7626474-600-auto?v=638182324950470000&width=600&height=auto&aspect=true'
+        }, {
+            id: 2,
+            title2: 'Camisa Mc Tricot Rede',
+            price: "R$ 285,99",
+            image_url: 'https://lojausereserva.vtexassets.com/arquivos/ids/7220575-600-auto?v=638044032712900000&width=600&height=auto&aspect=true'
+        }, {
+            id: 3,
+            title3: 'Camisa Mc Estampada',
+            price: "R$ 299,99",
+            image_url: 'https://lojausereserva.vtexassets.com/arquivos/ids/7855116-600-auto?v=638228063419670000&width=600&height=auto&aspect=true'
+        }, {
+            id: 4,
+            title4: 'Camisa Mc Estampada',
+            price: "R$ 299,99",
+            image_url: 'https://lojausereserva.vtexassets.com/arquivos/ids/7077748-1200-auto?v=637941229534030000&width=1200&height=auto&aspect=true'
+        },
+    ]
 
-        
-    </>
-  )
+    useEffect(() => {
+        fetchProdutos().then(produtos => {
+            setProdutos(produtos);
+            setLoading(false);
+        })
+    }, []);
+
+
+    return (
+        <>
+            <div>
+                <h1 className="title">Lista de Produtos</h1><br/>
+            </div>
+            {
+            loading ? (
+                <p className={
+                    style.loading
+                }>Loading...</p>
+            ) : (
+                <Item items={produtos}/>
+            )
+        } </>
+    )
 }
