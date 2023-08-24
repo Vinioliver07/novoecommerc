@@ -3,22 +3,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
     color: #f0371e;
     font-size: 34px;
     image-rendering: optimizeSpeed;
-    max-width: none;
-}
-.ItemsList{
-    max-width: none;
+    
+    
 }
 
 .ItemsList ul li img{
     display: flex;
-    align-items: normal;
+    align-items: center;
     justify-content: center;
-    margin-top: 40px;
     height: 370px;
     width: 320px;
-    max-width: none;
+    
 }

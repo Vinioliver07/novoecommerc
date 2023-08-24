@@ -11,8 +11,9 @@ export function Item({ items }) {
                     items.map(item =>
                         <div className={style.content} key={item.id}>
                             <ul className={style.card}>
-                                <li><img src={item.image_url} /></li>
+                                <li><img src={item.image} /></li>
                                 <li>{item.title}</li>
+                                <li>{item.description}</li>
                                 <li>{item.price}</li>
                             </ul>
                         </div>

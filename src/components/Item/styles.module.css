@@ -14,6 +14,7 @@
 }
 
 .card {
+    background-color: #faf2f2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,14 +23,14 @@
     flex-direction: column;
     border-radius: 6px;
     border-color:  #f0371e;
-    max-height: 380px;
     min-height: 380px;
+    
 
     list-style: none;
     gap: 10px;
 
     &:hover {
-        background-color:#e8eaf4;
+        background-color:#a5aaa8;
         border-color: #e8eaf4;
         transition: linear 0.3s;
     }
