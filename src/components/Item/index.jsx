@@ -13,8 +13,11 @@ export function Item({ items }) {
                             <ul className={style.card}>
                                 <li><img src={item.image} /></li>
                                 <li>{item.title}</li>
-                                <li>{item.description}</li>
+                                {/* <li>{item.description}</li> */}
+                                <li><button>Mais detalhes</button>{item.button}</li>
                                 <li>{item.price}</li>
+                                <li>Restam somente {item.estoque}</li>
+                               
                             </ul>
                         </div>
                     )

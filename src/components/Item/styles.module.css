@@ -1,6 +1,5 @@
 .container {
     display: flex;
-    max-width: 1200px;
     align-items: center;
     justify-content: center;
 }
@@ -34,4 +33,8 @@
         border-color: #e8eaf4;
         transition: linear 0.3s;
     }
+}
+.button{
+    border-radius: 2rem;
+    width: 35px;
 }
