@@ -34,7 +34,7 @@ export function ItemList() {
         }, {
             id: 4,
             title4: 'Camisa Mc Estampada',
-            price: "R$ 299,99",
+            price: "R$ 139,99",
             image_url: 'https://lojausereserva.vtexassets.com/arquivos/ids/7077748-1200-auto?v=637941229534030000&width=1200&height=auto&aspect=true'
         },
     ]
